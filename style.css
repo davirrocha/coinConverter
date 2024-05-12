@@ -10,6 +10,7 @@ body {
     background-image: url(./assets/backgorund-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 
@@ -29,7 +30,7 @@ main {
 
 }
 
-h1{
+h1 {
     text-align: center;
     color: #ffffff;
 }
@@ -148,13 +149,17 @@ section {
 
 @media screen and (max-width: 990px) {
 
-
+    body {
+        height: 100vh;
+        display: flex;
+    }
 
     main {
-        width: 81%;
+        width: 80%;
         height: 100%;
         margin: auto;
         height: auto;
+        padding-bottom: 30px;
     }
 
     .content {
@@ -172,7 +177,7 @@ section {
     section {
         margin: auto;
         border: none;
-        width: 100%;
+        width: 90%;
     }
 
 
