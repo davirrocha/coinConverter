@@ -16,33 +16,37 @@
 
 <body>
 
-    <img src="./assets/img-logo.gif" alt="img-logo" class="logo-img">
 
     <main>
+        <div class="content">
 
-        <p class="title-select">Converter <b>de</b></p>
-        <select class="inputs convert-from">
-            <option> Selecionar</option>
-            <option value="real"> R$ Real brasileiro</option>
-        </select>
+            <h1>CONVERSOR</h1>
 
-        <p class="title-select">Converter <b>para</b></p>
-        <select class="inputs convert-to">
-            <option>Selecionar</option>
-            <option value="dolar">US$ Dólar Americano</option>
-            <option value="euro">€ Euro</option>
-            <option value="libra">£ Libra</option>
-            <option value="yen">¥ Yen</option>
-        </select>
 
-        <p class="title-select">Valor</p>
-        <input placeholder="Digite o Valor" class="inputs input-value">
-        <br>
-        <button class="button-convert">Converter</button>
 
-        <section>
+            <p class="title-select">Converter <b>de</b></p>
+            <select class="inputs convert-from">
+                <option> Selecionar</option>
+                <option value="real"> R$ Real brasileiro</option>
+            </select>
 
-            <div class="convert">
+            <p class="title-select">Converter <b>para</b></p>
+            <select class="inputs convert-to">
+                <option>Selecionar</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="yen">¥ Yen</option>
+            </select>
+
+            <p class="title-select">Valor</p>
+            <input placeholder="Digite o Valor" class="inputs input-value">
+            <br>
+            <button class="button-convert">Converter</button>
+
+            <section>
+
+
                 <img src="./assets/real.png" class="bra img-currency">
                 <figure class="name-currency" id="name-moeda">Real</figure>
                 <p class="value-currency" id="real">R$ 0,00</p>
@@ -51,10 +55,10 @@
                 <img src="./assets/dolar.png" alt="img-eua " class="eua img-currency" id="currency">
                 <figure class="name-currency" id="usa">Dólar Americano</figure>
                 <p class="value-currency" id="dolar">$ 0,00</p>
-            </div>
 
-        </section>
 
+            </section>
+        </div>
     </main>
 
 </body>
