@@ -16,16 +16,14 @@
 
 <body>
 
-
     <main>
-        <div class="content">
 
+        <section id="content">
             <h1>CONVERSOR</h1>
-
-
-
-            <p class="title-select">Converter <b>de</b></p>
-            <select class="inputs convert-from">
+            <span id="one">
+                <p class="title-select">Converter <b>de</b></p>
+            </span>
+            <select class="inputs">
                 <option> Selecionar</option>
                 <option value="real"> R$ Real brasileiro</option>
             </select>
@@ -37,28 +35,29 @@
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
                 <option value="yen">¥ Yen</option>
+                <option value="btc"> ₿ Bitcoin</option>
             </select>
 
-            <p class="title-select">Valor</p>
-            <input placeholder="Digite o Valor" class="inputs input-value">
+            <span id="two">
+                <p class="title-select">Valor</p>
+            </span>
+            <input placeholder="R$ 10.000,00" class="inputs input-value">
             <br>
             <button class="button-convert">Converter</button>
 
-            <section>
+            <section id="result">
 
-
-                <img src="./assets/real.png" class="bra img-currency">
+                <img src="./assets/real.png" class="img-currency">
                 <figure class="name-currency" id="name-moeda">Real</figure>
                 <p class="value-currency" id="real">R$ 0,00</p>
                 <img src="./assets/seta.png" alt="img-seta" class="seta">
-                <br>
-                <img src="./assets/dolar.png" alt="img-eua " class="eua img-currency" id="currency">
+
+                <img src="./assets/dolar.png" alt="img-eua" class="img-currency" id="currency">
                 <figure class="name-currency" id="usa">Dólar Americano</figure>
                 <p class="value-currency" id="dolar">$ 0,00</p>
 
-
             </section>
-        </div>
+        </section>
     </main>
 
 </body>
