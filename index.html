@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,49 +19,51 @@
     <main>
 
         <section id="content">
+
             <h1>CONVERSOR</h1>
-            <span id="one">
-                <p class="title-select">Converter <b>de</b></p>
-            </span>
+
+
+            <p class="title-select">Converter <b>de</b></p>
             <select class="inputs">
-                <option> Selecionar</option>
                 <option value="real"> R$ Real brasileiro</option>
             </select>
 
-            <p class="title-select">Converter <b>para</b></p>
+
+            <p class="title-select"><b>Para</b></p>
             <select class="inputs convert-to">
                 <option>Selecionar</option>
                 <option value="dolar">US$ Dólar Americano</option>
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
-                <option value="yen">¥ Yen</option>
-                <option value="btc"> ₿ Bitcoin</option>
             </select>
 
-            <span id="two">
-                <p class="title-select">Valor</p>
-            </span>
+
+            <p class="title-select"><b>Valor</b></p>
             <input placeholder="R$ 10.000,00" class="inputs input-value">
-            <br>
-            <button class="button-convert">Converter</button>
+
+            <button class="btnConvet" onclick="diceConvert()">Converter</button>
 
             <section id="result">
+                <div>
+                    <img src="./assets/real.png" class="img-currency">
+                    <p class="name-currency">Real</p>
+                    <p class="value-currency" id="conversion">R$ 0,00</p>
+                </div>
 
-                <img src="./assets/real.png" class="img-currency">
-                <figure class="name-currency" id="name-moeda">Real</figure>
-                <p class="value-currency" id="real">R$ 0,00</p>
-                <img src="./assets/seta.png" alt="img-seta" class="seta">
+                <i class="fa-regular fa-arrow-down"></i>
 
-                <img src="./assets/dolar.png" alt="img-eua" class="img-currency" id="currency">
-                <figure class="name-currency" id="usa">Dólar Americano</figure>
-                <p class="value-currency" id="dolar">$ 0,00</p>
+                <div>
+                    <img src="./assets/dolar.png" class="img-currency" id="currency" alt="img-eua">
+                    <p class="name-currency" id="curencyName">Dólar Americano</p>
+                    <p class="value-currency" id="converted">$0.00</p>
+                </div>
 
             </section>
         </section>
     </main>
-
 </body>
 
 <script src="./document.js"></script>
+<script src="https://kit.fontawesome.com/054ee8968e.js" crossorigin="anonymous"></script>
 
 </html>
